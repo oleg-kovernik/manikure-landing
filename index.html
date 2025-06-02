@@ -1,97 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Мастер маникюра Алена</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff0f5;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #e91e63;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      max-width: 600px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    h1 {
-      margin-top: 0;
-    }
-    .price-list {
-      list-style: none;
-      padding: 0;
-    }
-    .price-list li {
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-    }
-    .contacts {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .contacts a {
-      display: inline-block;
-      margin: 0 10px;
-      color: #e91e63;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 25px;
-      background: #e91e63;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 10px 0;
-      text-align: center;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Маникюр от Алены — Красивые ногти и дизайн</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff0f5;
+    margin: 0; padding: 0;
+    color: #333;
+  }
+  header {
+    background: #d05c8f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+  }
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(208 92 143 / 0.3);
+    transition: transform 0.3s ease;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .contacts {
+    background: #f4e6f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .contacts a {
+    color: #d05c8f;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .contacts a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 40px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Алена — мастер маникюра</h1>
-    <p>Красота в каждом штрихе</p>
-  </header>
-  <main>
-    <section>
-      <h2>Услуги и цены</h2>
-      <ul class="price-list">
-        <li>Маникюр классический — 1200 ₽</li>
-        <li>Гель-лак — 1500 ₽</li>
-        <li>Дизайн ногтей — от 500 ₽</li>
-        <li>Педикюр — 2000 ₽</li>
-      </ul>
-    </section>
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <a href="https://t.me/manikure_nails_alena_bot" target="_blank">Telegram</a>
-      <a href="https://instagram.com/example_alena" target="_blank">Instagram</a>
-    </section>
-    <section style="text-align:center;">
-      <a class="btn" href="https://t.me/manikure_nails_alena_bot" target="_blank">Записаться</a>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 Алена — мастер маникюра
-  </footer>
+
+<header>
+  <h1>Маникюр от Алены</h1>
+  <p>Красивые ногти и дизайн — Ваш идеальный маникюр</p>
+</header>
+
+<main>
+  <div class="intro">
+    Добро пожаловать! Профессиональный уход за ногтями и стильный дизайн для вас. Запишитесь на процедуру через <a href="https://t.me/manikure_nails_alena_bot" target="_blank" rel="noopener noreferrer">наш Telegram-бот</a>.
+  </div>
+
+  <section class="gallery" aria-label="Галерея маникюра">
+    <img src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?auto=format&fit=crop&w=400&q=80" alt="Маникюр с красным дизайном" />
+    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=400&q=80" alt="Нежный маникюр с блестками" />
+    <img src="https://images.unsplash.com/photo-1518976024611-78f741b06e59?auto=format&fit=crop&w=400&q=80" alt="Маникюр пастельных тонов" />
+    <img src="https://images.unsplash.com/photo-1543466835-00a7907e3a7f?auto=format&fit=crop&w=400&q=80" alt="Стильный дизайн ногтей" />
+    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=400&q=80" alt="Яркий маникюр с цветами" />
+  </section>
+
+  <section class="contacts">
+    <p>Связаться и записаться:</p>
+    <p>Telegram: <a href="https://t.me/manikure_nails_alena_bot" target="_blank" rel="noopener noreferrer">@manikure_nails_alena_bot</a></p>
+    <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+    <p>Instagram: <a href="https://instagram.com/manikure_nails_alena" target="_blank" rel="noopener noreferrer">@manikure_nails_alena</a></p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Маникюр от Алены. Все права защищены.
+</footer>
+
 </body>
 </html>
